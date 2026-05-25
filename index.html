@@ -242,7 +242,18 @@ body {
     font-size: 1.15rem; color: var(--accent-mid);
     margin-top: 0.5rem; line-height: 1.5;
 }
-.register-link { margin-top: 1.2rem; }
+.lecturer-link { margin-top: 1.2rem; }
+.lecturer-link a {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.8rem 2.4rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white; font-family: 'Varela Round', sans-serif;
+    font-size: 1.15rem; font-weight: 700; text-decoration: none;
+    border-radius: 999px; box-shadow: 0 4px 16px rgba(45,122,110,0.25);
+    transition: all 0.2s;
+}
+.lecturer-link a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,122,110,0.35); }
+.register-link { margin-top: 0.8rem; }
 .register-link a {
     display: inline-flex; align-items: center; gap: 0.5rem;
     padding: 0.8rem 2.4rem;
@@ -267,6 +278,7 @@ body {
   <h1 class="main-title">סילבוס ההשתלמות</h1>
   <p class="subtitle-act">בינת הלב - Life Coding</p>
   <p class="course-meta">מספר פתרון למידה 216114 · השתלמות נושאת גמול, 30 שעות</p>
+  <p class="lecturer-link"><a href="https://yaelnezer.github.io/binat-halev-about/" target="_blank" rel="noopener noreferrer">לפרטים על המרצה ←</a></p>
   <p class="register-link"><a href="https://poh.education.gov.il/professional-development/compass-system/" target="_blank" rel="noopener noreferrer">להרשמה להשתלמות דרך מצפ"ן ←</a></p>
 </div>
 
